@@ -1,0 +1,169 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Homework</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        width: 1440px;
+        height: 862px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header {
+        width: 100%;
+        min-height: 72px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .leftNav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 32px;
+        align-items: center;
+        justify-content: flex-start;
+
+        font-family: Inter;
+        font-weight: 500px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .menuDropdown {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+      }
+
+      .rightNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 12px;
+      }
+
+      .hero {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 94px;
+        padding-top: 96px;
+        overflow: hidden;
+      }
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 72px;
+        font-weight: 800;
+        line-height: 98px;
+        font-family: sans-serif;
+        color: black;
+      }
+
+      #cta {
+        padding: 12px 32px 12px 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        background-color: #8c30f5;
+      }
+
+      .circle {
+        width: 740px;
+        height: 740px;
+        border-radius: 100%;
+        background-color: #8c30f5;
+        opacity: 40%;
+
+        position: absolute;
+        bottom: -538px;
+        z-index: -1;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body style="margin: 0px; display: flex; justify-content: center">
+    <div class="container">
+      <div class="header">
+        <div class="leftNav">
+          <img src="b4-css-homework-images/logo.png" alt="logo" />
+          <div>About</div>
+          <div>Products</div>
+          <div>Pricing</div>
+          <div>Blog</div>
+          <div>Jobs</div>
+          <div class="menuDropdown">
+            <div>More</div>
+            <img
+              src="b4-css-homework-images/chevron-down.svg"
+              alt="dropdown"
+              style="width: 18px; height: 18px"
+            />
+          </div>
+        </div>
+
+        <div class="rightNav">
+          <img
+            src="b4-css-homework-images/Google Play Badge.svg"
+            alt="Google"
+          />
+          <img
+            src="b4-css-homework-images/App Store Badge.svg"
+            alt="AppStore"
+          />
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="title">
+          <div class="content">
+            Track your product sales from anywhere, anytime.
+          </div>
+          <div
+            id="cta"
+            style="
+              color: white;
+              font-family: Inter;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+            "
+          >
+            Start selling
+          </div>
+        </div>
+        <img src="img.svg" alt="" />
+        <div class="circle"></div>
+      </div>
+    </div>
+  </body>
+</html>
